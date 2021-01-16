@@ -62,7 +62,7 @@ The purpose of this analysis for myself is to:
 
 [smoking_graph](https://github.com/kjonina/heart_attaick_data/blob/main/graph/smoking_graph.png)
 
-[death_graph](https://github.com/kjonina/heart_attaick_data/blob/main/graph/death_graph.png)
+[death_graph](https://github.com/kjonina/heart_attaick_data/blob/main/graph/death_graph%20.png)
 
 
 
