@@ -52,17 +52,17 @@ The purpose of this analysis for myself is to:
 
 
 ## EDA for
-[diabetes_graph](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data)
+[diabetes_graph](https://github.com/kjonina/heart_attaick_data/blob/main/graph/diabetes_graph.png)
 
-[anaemia_graph](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data)
+[anaemia_graph](https://github.com/kjonina/heart_attaick_data/blob/main/graph/anaemia_graph.png)
 
-[sex_graph](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data)
+[sex_graph](https://github.com/kjonina/heart_attaick_data/blob/main/graph/sex_graph.png)
 
-[HB_graph](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data)
+[HB_graph](https://github.com/kjonina/heart_attaick_data/blob/main/graph/HB_graph.png)
 
-[smoking_graph](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data)
+[smoking_graph](https://github.com/kjonina/heart_attaick_data/blob/main/graph/smoking_graph.png)
 
-[death_graph](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data)
+[death_graph](https://github.com/kjonina/heart_attaick_data/blob/main/graph/death_graph.png)
 
 
 
@@ -76,7 +76,7 @@ The data was split into 70%/30% for training and test set.
 | Training Set | Test Set |
 | ----------| ------------- |
 | 70% | 30% | 
-| age | float64 | 
+| 299 | 12 | 
 
 Number of observations in each class before oversampling (training data):
 | Variable | Current Data |
