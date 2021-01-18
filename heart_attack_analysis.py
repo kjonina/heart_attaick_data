@@ -320,6 +320,59 @@ plt.show()
 #Save the graph
 ss_graph.figure.savefig('ss_graph .png')
 
+
+# =============================================================================
+# 
+# =============================================================================
+
+# creating a new dataset with Room Type and 
+age_death = pd.DataFrame({'age': df['age'],
+                   'DEATH_EVENT': df['DEATH_EVENT']})
+
+
+age_death.groupby('DEATH_EVENT')['age'].describe()
+#             count       mean        std   min   25%   50%   75%   max
+#DEATH_EVENT                                                           
+#0            203.0  58.761906  10.637890  40.0  50.0  60.0  65.0  90.0
+#1             96.0  65.215281  13.214556  42.0  55.0  65.0  75.0  95.0 
+
+ 
+
+# boxplot for  price for the room 
+plt.figure(figsize = (12, 8))
+age_death_boxplot = sns.boxplot(x = 'DEATH_EVENT', y = 'age',
+            data = age_death, fliersize = 0)
+age_death_boxplot.set_title('Breakdown of Death by Age', fontsize = 20)
+age_death_boxplot.set_ylabel('Patients\' Age', fontsize = 14)
+age_death_boxplot.set_xlabel('Death Event', fontsize = 14)
+plt.show()
+
+
+# creating a new dataset with Room Type and 
+age_death_avaibility = pd.DataFrame({'age': df['age'],
+                   'DEATH_EVENT': df['DEATH_EVENT']})
+
+
+age_death_avaibility.groupby('DEATH_EVENT')['age'].describe()
+#                   count        mean         std   min   25%    50%     75%        max
+#room_type                                                                     
+#Entire home/apt  15349.0  138.737703  104.924566  11.0  80.0  110.0  155.00    1000.0  
+#Hotel room         320.0   96.550000   67.870132   0.0  62.0   82.0  107.25     500.0    
+#Private room     11119.0   66.937494   57.303045  12.0  40.0   55.0   75.00    1000.0    
+#Shared room        239.0   56.108787  109.101972  10.0  20.0   30.0   52.50     999.0    
+
+ 
+
+# boxplot for  price for the room 
+plt.figure(figsize = (12, 8))
+room_price_boxplot = sns.boxplot(x = 'DEATH_EVENT', y = 'age',
+            data = age_death_avaibility, fliersize = 0)
+room_price_boxplot.set_title('Breakdown of Death by Age', fontsize = 20)
+room_price_boxplot.set_ylabel('Number of Patients', fontsize = 14)
+room_price_boxplot.set_xlabel('Death Event', fontsize = 14)
+plt.show()
+
+
 # =============================================================================
 # Splitting the data into training and test data and OVERSAMPLING
 # =============================================================================
