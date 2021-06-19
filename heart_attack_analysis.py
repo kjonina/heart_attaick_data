@@ -7,6 +7,7 @@ Tableau Public:     https://public.tableau.com/profile/karina.jonina#!/
 Data Gathered:	    https://www.kaggle.com/andrewmvd/heart-failure-clinical-data
 
 Task Details
+Create interactive graphs using Plotly
 Create a model to assess the likelihood of a death by heart failure event.
 This can be used to help hospitals in assessing the severity of patients with cardiovascular diseases.
 """
@@ -126,8 +127,8 @@ anaemia_graph.set_ylabel('Number of Patients', fontsize = 14)
 anaemia_graph.set_xlabel('Anaemia', fontsize = 14)
 plt.show()
 
-#Save the graph
-anaemia_graph.figure.savefig('anaemia_graph.png')
+##Save the graph
+#anaemia_graph.figure.savefig('anaemia_graph.png')
 
 
 # examining data in Parishes
@@ -143,8 +144,8 @@ sex_graph.set_ylabel('Number of Patients', fontsize = 14)
 sex_graph.set_xlabel('sex', fontsize = 14)
 plt.show()
 
-#Save the graph
-sex_graph.figure.savefig('sex_graph.png')
+##Save the graph
+#sex_graph.figure.savefig('sex_graph.png')
 
 
 # counting numbers of Room Types
@@ -153,7 +154,7 @@ df.groupby(['high_blood_pressure']).size().sort_values(ascending=False)
 #1    105
 
 
-#Plot the graph of Room Type
+#Plot the graph of High Blood Pressure
 plt.figure(figsize = (12, 8))
 HB_graph = sns.countplot(x= 'high_blood_pressure', data = df, palette = 'terrain',order = df['high_blood_pressure'].value_counts().index)
 HB_graph.set_title('Number of Patients with High Blood Pressure', fontsize = 20)
@@ -161,8 +162,8 @@ HB_graph.set_xlabel('High Blood Pressure', fontsize = 14)
 HB_graph.set_ylabel('Number of Patients', fontsize = 14)
 plt.show()
 
-#Save the graph
-HB_graph.figure.savefig('HB_graph.png')
+##Save the graph
+#HB_graph.figure.savefig('HB_graph.png')
 
 
 
@@ -173,7 +174,7 @@ df.groupby(['high_blood_pressure']).size().sort_values(ascending=False)
 #1    105
 
 
-#Plot the graph of Room Type
+#Plot the graph of Smokers
 plt.figure(figsize = (12, 8))
 smoking_graph = sns.countplot(x= 'smoking', data = df, palette = 'terrain',order = df['smoking'].value_counts().index)
 smoking_graph.set_title('Number of Patients who Smoke', fontsize = 20)

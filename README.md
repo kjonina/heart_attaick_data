@@ -69,8 +69,11 @@ The purpose of this analysis for myself is to:
 ## EDA for
 
 ## Data Preparation for Decision Tree
-The data was normalised in numerical data. 
+### Normalisation 
+The data was normalised on numerical data. 
 
+
+### Training and Test Set
 The data was split into 70%/30% for training and test set.
 
 | Training Set | Test Set |
